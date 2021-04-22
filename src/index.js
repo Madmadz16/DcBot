@@ -1,5 +1,3 @@
-// https://youtu.be/HWRwKqIvfWM?t=360
-
 const Discord = require('discord.js');
 // const token = require('../token.json').token;
 const prefix = require('../config.json').prefix;
