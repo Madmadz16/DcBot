@@ -96,4 +96,4 @@ client.on('message', async function(message) {
   }
 })()
 
-// client.login(token);
+client.login(prosess.env.DCJ_TOKEN);
