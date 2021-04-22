@@ -1,7 +1,7 @@
 // https://youtu.be/HWRwKqIvfWM?t=360
 
 const Discord = require('discord.js');
-const token = require('../token.json').token;
+// const token = require('../token.json').token;
 const prefix = require('../config.json').prefix;
 const client = new Discord.Client();
 const fs = require('fs').promises;
