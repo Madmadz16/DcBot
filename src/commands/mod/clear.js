@@ -1,5 +1,8 @@
 module.exports = {
   run: async(client, message, args) => {
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('You are not allowed to do that');
+
+    message.delete();
     const amount = args.join(' '); // Amount of messages which should be deleted
     if (!amount) return message.reply('You haven\'t given an amount of messages which should be deleted!'); // Checks if the `amount` parameter is given
     if (isNaN(amount)) return message.reply('The amount parameter isn`t a number!'); // Checks if the `amount` parameter is a number. If not, the command throws an error

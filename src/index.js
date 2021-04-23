@@ -98,17 +98,4 @@ client.on('message', async function(message) {
   }
 })()
 
-client.login(token);
-// client.login('NzgwNTA1ODM1NDk0MTc4ODE2.X7wEtA.fy9ssTMv4P7LJFZ26MXGFyNrSGs');
-
-/*
-regenerate your token and hide it in later questions in stack overflow
-cd "D:\Users\Mads Fredrik Thaulow\Desktop\Coding\MyBots\discord.js\testing\src"
-
-i have started using the table npm for d.js and it stops after 3 rows and no errors comes up. i tried changing columnCount in my table config but then i get a Error: Row cell count does not match the config.columnCount. error
-**index.js:** https://srcb.in/1M59z2Kkxx
-**tableconfig.js:** https://srcb.in/5w0WIYxbJS
-
-https://srcb.in/C6jpChsPFC
-**folder setup:** https://paste.pics/C9KOV
-*/
+client.login(process.env.DCJ_TOKEN);
