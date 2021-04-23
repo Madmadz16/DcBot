@@ -10,9 +10,8 @@ module.exports = {
 
     const rolesEmbed = new Discord.MessageEmbed()
       .setColor('#9e5ab9')
-      .addFields(
-        { name: "Role Name", value: `${rolemap}`, inline: true }
-      )
+      .addFields("Role Name", value: `${rolemap}`)
+
     await message.channel.send(rolesEmbed);
 
   },
