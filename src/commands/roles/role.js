@@ -3,14 +3,11 @@ const Discord = require('discord.js');
 module.exports = {
   run: async(client, message, args) => {
 
-    // !role @user
-
-
     const user = message.mentions.members.first();
     if (!user) {
       const noUser = new Discord.MessageEmbed()
         .setColor('#9e5ab9')
-        .setDescription(`Coulnt find user`)
+        .setDescription(`couldn't find user`)
 
       return message.channel.send(noUser);
     }
@@ -32,5 +29,3 @@ module.exports = {
   aliases: [],
   description: 'Lists every role from a user'
 }
-
-// https://srcb.in/pbvP9Ynf7i
