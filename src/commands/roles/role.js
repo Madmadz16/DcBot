@@ -7,7 +7,7 @@ module.exports = {
     if (!user) {
       const noUser = new Discord.MessageEmbed()
         .setColor('#9e5ab9')
-        .setDescription(`couldn't find user`)
+        .setDescription(`Couldn't find user`)
 
       return message.channel.send(noUser);
     }
